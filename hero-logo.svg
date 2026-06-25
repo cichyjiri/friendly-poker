@@ -1,0 +1,196 @@
+<svg viewBox="-60 -40 1210 1040" xmlns="http://www.w3.org/2000/svg" width="1200" height="1040">
+  <defs>
+    <radialGradient id="bg-orb1" cx="15%" cy="12%" r="45%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#080515" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg-orb2" cx="88%" cy="92%" r="40%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#080515" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg-orb3" cx="80%" cy="10%" r="30%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#080515" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect x="-60" y="-40" width="1320" height="1080" fill="#080515"/>
+  <rect x="-60" y="-40" width="1320" height="1080" fill="url(#bg-orb1)"/>
+  <rect x="-60" y="-40" width="1320" height="1080" fill="url(#bg-orb2)"/>
+  <rect x="-60" y="-40" width="1320" height="1080" fill="url(#bg-orb3)"/>
+<defs>
+    <filter id="glowBlue" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b1"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b2pre"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="b3pre"/>
+        <feComponentTransfer in="b2pre" result="b2"><feFuncA type="linear" slope="1.6"/></feComponentTransfer>
+        <feComponentTransfer in="b3pre" result="b3"><feFuncA type="linear" slope="1.2"/></feComponentTransfer>
+        <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glowYellow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b1"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b2pre"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="b3pre"/>
+        <feComponentTransfer in="b2pre" result="b2"><feFuncA type="linear" slope="1.6"/></feComponentTransfer>
+        <feComponentTransfer in="b3pre" result="b3"><feFuncA type="linear" slope="1.2"/></feComponentTransfer>
+        <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glowPurple" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b1"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b2pre"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b3pre"/>
+        <feComponentTransfer in="b2pre" result="b2"><feFuncA type="linear" slope="1.6"/></feComponentTransfer>
+        <feComponentTransfer in="b3pre" result="b3"><feFuncA type="linear" slope="1.2"/></feComponentTransfer>
+        <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="glowWhite" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b1"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b2pre"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="b3pre"/>
+        <feComponentTransfer in="b2pre" result="b2"><feFuncA type="linear" slope="1.6"/></feComponentTransfer>
+        <feComponentTransfer in="b3pre" result="b3"><feFuncA type="linear" slope="1.2"/></feComponentTransfer>
+        <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <!-- Traced neon flame - blue, centered above FRIENDLY (scaled 10% smaller) -->
+    <g transform="translate(551.5,356.7) scale(0.9) translate(-545.5,-305.7)">
+    <g filter="url(#glowBlue)">
+    <g transform="translate(431,153) scale(0.45)">
+      <g transform="translate(0,634) scale(0.1,-0.1)" fill="#4fc3ff" stroke="none">
+        <path d="M3427 5217 c-52 -37 14 -107 356 -375 272 -213 359 -333 387 -531 37 -261 -96 -512 -415 -782 -62 -53 -98 -117 -57 -101 10 3 13 1 8 -6 -18 -30 33 -2 104 56 322 266 481 577 441 860 -12 87 -47 194 -79 240 -10 15 -24 39 -31 54 -22 44 -170 190 -271 269 -52 40 -151 121 -220 179 -180 152 -193 160 -223 137z"/>
+        <path d="M2678 4754 c-38 -20 -35 -35 16 -107 291 -410 370 -765 225 -1016 -224 -390 -793 -466 -1239 -167 -60 40 -112 44 -103 7 3 -14 7 -29 9 -33 10 -17 217 -127 319 -169 145 -60 431 -75 595 -31 432 116 659 488 551 902 -47 184 -132 355 -271 553 -58 82 -61 84 -102 61z"/>
+        <path d="M870 4084 c0 -8 -7 -14 -15 -14 -38 0 -6 -35 156 -172 236 -200 284 -277 283 -448 -1 -187 -37 -271 -303 -716 -279 -468 -315 -699 -155 -1016 241 -479 812 -860 1479 -988 33 -6 78 -15 100 -20 127 -27 335 -44 555 -44 250 -1 293 4 288 32 -3 15 -25 17 -233 18 -605 3 -1140 141 -1520 391 -352 232 -605 540 -670 816 -44 188 19 415 193 697 329 532 355 590 356 820 1 129 -1 150 -21 192 -42 91 -158 222 -288 323 -27 22 -52 42 -55 45 -14 17 -124 94 -136 96 -8 1 -14 -4 -14 -12z"/>
+        <path d="M3218 3929 c-46 -26 9 -143 269 -566 185 -302 240 -454 250 -693 5 -129 -6 -274 -27 -345 -39 -132 -55 -176 -87 -243 -42 -88 -121 -206 -205 -306 -108 -129 -63 -164 50 -38 435 484 470 1112 95 1679 -21 32 -76 123 -122 203 -46 80 -101 174 -122 210 -47 82 -78 112 -101 99z"/>
+        <path d="M3350 2758 c0 -7 -16 -23 -35 -36 -44 -28 -102 -116 -114 -174 -22 -103 58 -313 112 -292 28 10 27 33 -3 100 -51 114 -40 200 37 284 24 26 34 130 13 130 -5 0 -10 -6 -10 -12z"/>
+        <path d="M3962 2559 c-7 -11 -10 -24 -7 -28 2 -5 7 -25 9 -45 3 -23 22 -58 49 -94 241 -314 307 -611 232 -1039 -14 -81 -13 -89 20 -95 61 -10 110 437 71 644 -30 159 -101 315 -222 493 -108 158 -136 189 -152 164z"/>
+        <path d="M2017 2114 c-9 -10 -9 -46 1 -62 5 -7 71 -28 148 -48 128 -32 336 -98 409 -129 17 -7 50 -21 75 -31 89 -36 547 -262 614 -302 37 -23 70 -42 73 -42 8 0 162 -109 218 -154 152 -122 231 -199 378 -369 54 -62 59 -66 82 -55 45 20 36 40 -81 178 -205 242 -492 456 -829 620 -60 29 -164 80 -229 112 -109 54 -186 88 -321 140 -222 85 -516 163 -538 142z"/>
+      </g>
+    </g>
+    </g>
+    <g transform="translate(431,153) scale(0.45)">
+      <g transform="translate(0,634) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
+        <path d="M3436 5202 c-22 -37 46 -104 354 -345 277 -218 373 -349 400 -546 34 -252 -88 -495 -380 -754 -102 -91 -121 -117 -85 -117 42 0 269 223 361 355 169 241 198 588 66 783 -10 15 -24 39 -31 54 -23 46 -141 160 -276 268 -71 57 -172 139 -223 183 -134 114 -173 140 -186 119z"/>
+        <path d="M2688 4739 c-26 -14 -23 -23 26 -92 289 -407 370 -766 228 -1011 -240 -414 -799 -498 -1267 -189 -56 37 -75 41 -75 16 0 -24 156 -113 305 -174 144 -60 431 -75 595 -31 486 131 675 545 478 1047 -57 143 -238 446 -267 445 -3 0 -14 -5 -23 -11z"/>
+        <path d="M880 4065 c-17 -20 -12 -25 136 -151 247 -211 299 -292 298 -464 -1 -187 -37 -271 -303 -716 -279 -468 -315 -699 -155 -1016 237 -470 793 -839 1459 -968 33 -7 80 -16 105 -21 171 -34 622 -59 760 -42 48 6 9 8 -155 9 -597 2 -1141 141 -1520 391 -359 237 -625 558 -690 836 -44 188 19 415 193 697 327 528 354 590 356 815 2 227 -46 304 -319 523 -66 52 -127 102 -136 109 -14 11 -18 11 -29 -2z"/>
+        <path d="M3229 3914 c-8 -69 36 -157 278 -551 185 -302 240 -454 250 -693 5 -129 -6 -274 -27 -345 -39 -132 -55 -176 -87 -243 -42 -88 -121 -206 -205 -306 -54 -65 -70 -96 -49 -96 14 0 124 130 183 215 315 460 305 1018 -29 1522 -34 51 -75 121 -244 414 -37 64 -68 101 -70 83z"/>
+        <path d="M3298 2687 c-91 -91 -106 -209 -43 -341 20 -42 40 -76 45 -76 21 0 18 22 -10 85 -51 113 -36 221 40 290 20 18 28 75 10 75 -5 0 -24 -15 -42 -33z"/>
+        <path d="M3975 2532 c3 -12 8 -36 10 -52 2 -17 24 -56 48 -88 239 -313 306 -609 233 -1032 -13 -77 -13 -91 4 -74 25 25 51 184 57 346 9 244 -16 367 -113 562 -50 100 -181 300 -221 337 l-25 24 7 -23z"/>
+        <path d="M2032 2080 c3 -20 18 -27 138 -57 124 -31 333 -97 405 -128 17 -7 50 -21 75 -31 89 -36 547 -262 614 -302 37 -23 70 -42 73 -42 10 0 171 -116 241 -174 40 -34 89 -73 108 -88 44 -34 126 -119 226 -235 52 -61 84 -90 93 -86 22 8 18 25 -14 69 -187 256 -518 515 -886 694 -60 29 -164 80 -229 112 -253 126 -606 250 -804 283 -41 7 -43 6 -40 -15z"/>
+      </g>
+    </g>
+
+    <!-- Flame eyes - pink neon dots -->
+    <g>
+    <g filter="url(#glowPurple)">
+      <circle cx="543.8" cy="274.5" r="6" fill="#ff4fd8"/>
+      <circle cx="616.7" cy="247.5" r="6" fill="#ff4fd8"/>
+    </g>
+    <g>
+      <circle cx="543.8" cy="274.5" r="2.5" fill="#ffffff"/>
+      <circle cx="616.7" cy="247.5" r="2.5" fill="#ffffff"/>
+    </g>
+    </g>
+    </g>
+
+    <!-- Central card - the flame's own card, drawn first so it sits behind side cards -->
+    <g filter="url(#glowPurple)">
+      <path fill="none" stroke="#b85bff" stroke-width="7" stroke-linecap="round"
+            d="M456,461 L456,226 A20,20 0 0 1 476,206 L627,206 A20,20 0 0 1 647,226 L647,461"/>
+      <text x="492" y="244" text-anchor="middle" font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="34"
+            fill="#b85bff" stroke="none">A</text>
+      <path fill="#b85bff" transform="translate(492,276) scale(1.05)"
+            d="M0,9 C-2,5 -17,-3 -17,-13 C-17,-22 -6,-24 0,-13 C6,-24 17,-22 17,-13 C17,-3 2,5 0,9 Z"/>
+    </g>
+    <g>
+      <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+            d="M456,461 L456,226 A20,20 0 0 1 476,206 L627,206 A20,20 0 0 1 647,226 L647,461"/>
+      <text x="492" y="244" text-anchor="middle" font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="34"
+            fill="#ffffff" stroke="none">A</text>
+      <path fill="#ffffff" transform="translate(492,276) scale(1.05)"
+            d="M0,9 C-2,5 -17,-3 -17,-13 C-17,-22 -6,-24 0,-13 C6,-24 17,-22 17,-13 C17,-3 2,5 0,9 Z"/>
+    </g>
+
+    <!-- Clean traced neon cards -->
+    <g transform="translate(0,40)">
+    <g filter="url(#glowPurple)">
+    <g transform="translate(50,-22.36) rotate(15.6, 237.072,329.579)">
+      <path fill="none" stroke="#b85bff" stroke-width="7" stroke-linecap="round"
+            d="m436.59 400l-85.62-153.84c-4.84-8.68-15.80-11.80-24.49-6.97l-111.83 62.26c-8.69 4.83-11.81 15.79-6.98 24.48l66.47 119.43"/>
+      <text style="transform: matrix(.643,-0.396,.396,.643,237.072,329.579)"
+            font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="36"
+            fill="#b85bff" stroke="none"><tspan x="10" y="0" text-anchor="middle">K</tspan></text>
+      <path fill="#b85bff"
+            d="m259.58 352.13c-2.87-1.78-15.69-0.98-19.66-7.41-3.57-5.79 2.72-11.44 10.94-6.74-0.5-9.45 7.36-12.53 10.93-6.74 3.97 6.43-2.51 17.52-2.21 20.89z"/>
+    </g>
+    <g transform="translate(-50,10) rotate(-15.6, 741.1,267.3)">
+      <path fill="none" stroke="#b85bff" stroke-width="7" stroke-linecap="round"
+            d="m653.41 400l85.62-153.84c4.84-8.68 15.80-11.80 24.49-6.97l111.83 62.26c8.69 4.83 11.81 15.79 6.98 24.48l-66.47 119.43"/>
+      <text style="transform: matrix(.643,.396,-.396,.643,741.1,267.3)"
+            font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="36"
+            fill="#b85bff" stroke="none"><tspan x="18" y="0" text-anchor="middle">2</tspan></text>
+      <path fill="#b85bff"
+            d="m736.5 300.9c2.87-1.78 15.69-0.98 19.66-7.41 3.57-5.79-2.72-11.44-10.94-6.74 0.5-9.45-7.36-12.53-10.93-6.74-3.97 6.43 2.51 17.52 2.21 20.89z"/>
+    </g>
+    </g>
+    <g>
+    <g transform="translate(50,-22.36) rotate(15.6, 237.072,329.579)">
+      <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+            d="m436.59 400l-85.62-153.84c-4.84-8.68-15.80-11.80-24.49-6.97l-111.83 62.26c-8.69 4.83-11.81 15.79-6.98 24.48l66.47 119.43"/>
+      <text style="transform: matrix(.643,-0.396,.396,.643,237.072,329.579)"
+            font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="36"
+            fill="#ffffff" stroke="none"><tspan x="10" y="0" text-anchor="middle">K</tspan></text>
+      <path fill="#ffffff"
+            d="m259.58 352.13c-2.87-1.78-15.69-0.98-19.66-7.41-3.57-5.79 2.72-11.44 10.94-6.74-0.5-9.45 7.36-12.53 10.93-6.74 3.97 6.43-2.51 17.52-2.21 20.89z"/>
+    </g>
+    <g transform="translate(-50,10) rotate(-15.6, 741.1,267.3)">
+      <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+            d="m653.41 400l85.62-153.84c4.84-8.68 15.80-11.80 24.49-6.97l111.83 62.26c8.69 4.83 11.81 15.79 6.98 24.48l-66.47 119.43"/>
+      <text style="transform: matrix(.643,.396,-.396,.643,741.1,267.3)"
+            font-family="'Rounded Mplus 1c Black',sans-serif" font-weight="900" font-size="36"
+            fill="#ffffff" stroke="none"><tspan x="18" y="0" text-anchor="middle">2</tspan></text>
+      <path fill="#ffffff"
+            d="m736.5 300.9c2.87-1.78 15.69-0.98 19.66-7.41 3.57-5.79-2.72-11.44-10.94-6.74 0.5-9.45-7.36-12.53-10.93-6.74-3.97 6.43 2.51 17.52 2.21 20.89z"/>
+    </g>
+    </g>
+    </g>
+
+    <!-- FRIENDLY - blue -->
+    <g>
+    <text x="545" y="550" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="78" letter-spacing="14"
+          fill="none" stroke="#4fc3ff" stroke-width="3.5"
+          filter="url(#glowBlue)">FRIENDLY</text>
+    <text x="545" y="550" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="78" letter-spacing="14"
+          fill="none" stroke="#ffffff" stroke-width="1.4">FRIENDLY</text>
+    </g>
+
+    <!-- POKER - biggest, hollow yellow neon -->
+    <g>
+    <text x="545" y="760" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="240" letter-spacing="10"
+          fill="none" stroke="#ffe14f" stroke-width="6"
+          filter="url(#glowYellow)">POKER</text>
+    <text x="545" y="760" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="240" letter-spacing="10"
+          fill="none" stroke="#ffffff" stroke-width="2.4">POKER</text>
+    </g>
+
+    <!-- TVOJI MAMY - purple, same font as FRIENDLY -->
+    <g>
+    <text x="545" y="885" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="92" letter-spacing="16"
+          fill="none" stroke="#b85bff" stroke-width="4.5"
+          filter="url(#glowPurple)">TVOJÍ MÁMY</text>
+    <text x="545" y="885" text-anchor="middle"
+          font-family="'Rounded Mplus 1c Black',sans-serif"
+          font-weight="900" font-size="92" letter-spacing="16"
+          fill="none" stroke="#ffffff" stroke-width="1.8">TVOJÍ MÁMY</text>
+    </g>
+</svg>
